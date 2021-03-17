@@ -1,3 +1,11 @@
+/*
+ * @file ring_buffer.c
+ * @author Michal Bogon
+ * @date 17'th Mar 2021
+ * @brief File containing ring buffer functions.
+ * @ver 1.0
+ */
+
 /* Includes ------------------------------------------------------------------*/
 #include <assert.h>
 #include <string.h>
