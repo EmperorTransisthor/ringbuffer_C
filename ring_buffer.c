@@ -65,6 +65,7 @@ size_t RingBuffer_GetLen(const RingBuffer *ringBuffer)
 	RingBuffer_GetLen function. Could be easily reworked making the code
 	probably a bit easier to read.
 	*/
+	
 	assert(ringBuffer);
 	
 	if (ringBuffer) {
@@ -132,5 +133,4 @@ void ClearBuffer(RingBuffer* ringBuffer)
 {
     for (int i = 0; i < ringBuffer->capacity; i++)
         *(ringBuffer->buffer + i) = "\0";
-    ringBuffer->isFull = false;
 }
