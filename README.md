@@ -7,7 +7,8 @@ There are 3 crucial things you need to know about it: <br />
 * tail is a pointer to the place, where first variable of the buffer, which has to be read <br />
 <br />
 
-**Equasions**
+**Equasions** <br />
+As we now know, that buffer is pointer to the beggining of our buffer, head and tail variables are pointing to places in memory, where we want to write / read accordingly, the equasions for operations in buffer would look like:
 * Read:   buffer + tail
 * Write:  buffer + head
 <br />
