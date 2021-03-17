@@ -18,7 +18,7 @@ There are 3 crucial things you need to know about it: <br />
 ``` C
 RingBuffer_Write(RingBuffer *ringBuffer, char c)      // Simplified RingBuffer_PutChar function
 {
-  *(ringBuffer->buffer + ringBuffer->head) = c;
+     *(ringBuffer->buffer + ringBuffer->head) = c;
 }
 ```
 
