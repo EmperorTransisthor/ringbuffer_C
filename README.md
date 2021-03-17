@@ -16,9 +16,10 @@ There are 3 crucial things you need to know about it: <br />
 *Writing information to the buffer* <br />
 
 ``` C
-(RingBuffer *ringBuffer, char c)
-
-*(ringBuffer->buffer + ringBuffer->head) = c;
+RingBuffer_Write(RingBuffer *ringBuffer, char c)      // Simplified RingBuffer_PutChar function
+{
+  *(ringBuffer->buffer + ringBuffer->head) = c;
+}
 ```
 
 More about the concept: https://www.embedded.com/ring-buffer-basics/
