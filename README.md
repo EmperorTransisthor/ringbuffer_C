@@ -8,7 +8,7 @@ There are 3 crucial things you need to know about it: <br />
 <br />
 
 **Equasions** <br />
-As we now know, that buffer is pointer to the beggining of our buffer, head and tail variables are pointing to places in memory, where we want to write / read accordingly, the equasions for operations in buffer would look like:
+As we now know, that ```char* buffer``` is pointer to the beggining of our buffer, head and tail variables are pointing to places in memory, where we want to write / read accordingly, the equasions for operations in buffer would look like:
 * Read:   buffer + tail
 * Write:  buffer + head
 <br />
