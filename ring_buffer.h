@@ -91,7 +91,6 @@ bool RingBuffer_GetChar(RingBuffer *ringBuffer, char *c);
  * and setting flag isFull = false, and integers head = 0, tail = 0 
  *
  * @param ringBuffer pointer to a \ref RingBuffer structure
- *
 */
 void ClearBuffer(RingBuffer *ringBuffer);
 
