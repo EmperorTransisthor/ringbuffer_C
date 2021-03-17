@@ -1,7 +1,7 @@
 /*
  * @file ring_buffer.c
  * @author Michal Bogon
- * @date 17'th Mar 2021
+ * @date 16'th Mar 2021
  * @brief File containing ring buffer functions.
  * @ver 1.0
  */
@@ -19,12 +19,12 @@ bool RingBuffer_Init(RingBuffer *ringBuffer, char *dataBuffer, size_t dataBuffer
 	assert(dataBufferSize > 0);
 	
 	if ((ringBuffer) && (dataBuffer) && (dataBufferSize > 0)) {
-	    ringBuffer->head    = 0;
-	    ringBuffer->tail    = 0;
-        ringBuffer->isFull  = false;
-        ringBuffer->buffer  = dataBuffer;
-        ringBuffer->capacity = dataBufferSize;
-	    return true;
+	    	ringBuffer->head    = 0;
+	    	ringBuffer->tail    = 0;
+        	ringBuffer->isFull  = false;
+        	ringBuffer->buffer  = dataBuffer;
+        	ringBuffer->capacity = dataBufferSize;
+	    	return true;
 	}
 	
 	return false;
@@ -55,6 +55,16 @@ bool RingBuffer_IsEmpty(const RingBuffer *ringBuffer)
 
 size_t RingBuffer_GetLen(const RingBuffer *ringBuffer)
 {
+	/*
+	This function can be simplified by using in RingBuffer structure
+	bufferLen variable, which counts the length of buffer capacity
+	every time something is written or read from the buffer. 
+	
+	I decieded to do it differently, because I wanted to make execution 
+	of other functions faster, although it unneccessarily complicates 
+	RingBuffer_GetLen function. Could be easily reworked making the code
+	probably a bit easier to read.
+	*/
 	assert(ringBuffer);
 	
 	if (ringBuffer) {
