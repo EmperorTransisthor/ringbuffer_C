@@ -5,6 +5,7 @@ There are 3 crucial things you need to know about it: <br />
 * char* buffer is a pointer to the beggining of string, where data is strored <br />
 * head is a pointer to the place, where next variable will be stored <br />
 * tail is a pointer to the place, where first variable of the buffer, which has to be read <br />
+
 More about the concept: https://www.embedded.com/ring-buffer-basics/
 
 This is homework for Microcontroller Applications subject. Feel free to use it. <br />
