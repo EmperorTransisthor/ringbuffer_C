@@ -1,3 +1,12 @@
+/*
+ * @file ring_buffer.h
+ * @author Lukasz Krzak
+ * @modified by Michal Bogon
+ * @date 16'th Mar 2021
+ * @brief File containing ring buffer functions declarations and structure RingBuffer.
+ * @ver 1.0
+ */
+
 #ifndef _RING_BUFFER_
 #define _RING_BUFFER_
 
